@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$fontStack: Raleway,
+Helvetica,
+Verdana,
+Arial,
+sans-serif;
+$fontSize: calc(14px + (21 - 14) * (100vw - 412px) / (1920 - 412));
+
+
+// Light mode Colors
+$lightModeBg: #ffffff;
+$lightModeText: #353335;
+
+// darkmode Colors
+$darkModeBg: #353335;
+$darkmodeText: #f3f1f3;
+
+// $textColor: #e9e4da;
+
+
+/* Color Theme Swatches in Hex */
+.monochrome-to-the-sakura-1-hex { color: #FFFEFF; }
+.monochrome-to-the-sakura-2-hex { color: #F3F1F3; }
+.monochrome-to-the-sakura-3-hex { color: #A6A4A6; }
+.monochrome-to-the-sakura-4-hex { color: #EFE1E7; }
+.monochrome-to-the-sakura-5-hex { color: #353335; }
+
+
+
+$vibrant1: #D94854; 
+$vibrant2: #590202; 
+$vibrant3: #F28585; 
+$vibrant4: #F2A7A7; 
+$vibrant5: #F2D0D0;

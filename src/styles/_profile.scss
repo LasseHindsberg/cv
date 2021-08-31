@@ -1,0 +1,60 @@
+.profile {
+    
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'fuckyou .  readMore'
+    '. . skills';
+    &__imageContainer {
+        margin: 0 auto;
+        grid-area: fuckyou;
+        padding: 25px;
+    }
+    &__img {
+        max-width: 300px;
+        max-height: 500px;
+    }
+    &__alsoRead{
+        grid-area: readMore;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__skills {
+        grid-area: skills;
+        
+    }
+}
+
+
+// Tablet
+@media screen and (max-width: 1200px) {
+    .profile  {
+        grid-template-columns: minmax(40%,50%) minmax(40%,50%);
+    grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 'fuckyou readMore'
+        '. skills'
+        '. .';
+
+        &__imageContainer{
+            padding: 0px;
+        }
+        &__img {
+            border-radius: 100%;
+        }
+    }
+    
+}
+
+
+// Phone
+@media screen and (max-width: 600px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+}

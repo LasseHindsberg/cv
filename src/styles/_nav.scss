@@ -1,0 +1,45 @@
+// Desktop Navigation
+.nav {
+    &__list {
+        width: 40vw;
+        justify-content: space-between;
+        display: flex;
+        list-style-type: none;
+
+    }
+
+    &__item a {
+        text-decoration: none;
+    }
+
+
+    // Changing color on hover styling
+    &__item a {
+        color: $vibrant3;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms color;
+    }
+
+    &__item a:hover {
+        color: $vibrant1;
+    }
+}
+
+.navDesktop {
+    width: 100vw;
+    display: flex;
+}
+
+
+// Tablet
+@media screen and (max-width: 800px) {
+    .nav__list {
+        width: 80vw;
+    }
+}
+
+// Phone
+@media screen and (max-width: 600px) {
+    .navDesktop {
+        display: none;
+    }
+}
