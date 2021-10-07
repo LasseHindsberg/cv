@@ -4,6 +4,7 @@ import Welcome from './views/Welcome';
 import About from './views/About';
 
 function App() {
+
   return (
     <div className="App">
       <Router>
