@@ -1,7 +1,6 @@
-import { Typography, LinearProgress } from '@material-ui/core';
-import { Rating } from '@material-ui/lab';
 import { navigate } from '@reach/router';
 import { useRef } from 'react';
+import { AiOutlineFacebook, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai'
 import LoadingBar from 'react-top-loading-bar';
 
 
@@ -17,18 +16,21 @@ export default function Profile() {
                 />
                 <div className="profile__imageContainer">
                     <img className="profile__img" alt="" src='https://i.imgur.com/84Rqwbi.png' />
-                    {/* <div className="profile__socials">
-                        <ul className="profile__socialsList">
-                            <li className="socialsItem"><a href="https://www.facebook.com/lasse-hindsberg" target="_blank">Facebook</a></li>
-                            <li className="socialsItem"><a href="https://2" target="_blank"></a></li>
-                            <li className="socialsItem"><a href="https://3" target="_blank"></a></li>
-                        </ul>
-                    </div> */}
                 </div>
 
                 {/* mobile links thingies idk */}
                 <div className="profile__alsoRead">
                     <h1>Check Out ...</h1>
+                    <section>
+                        <h2>Socials</h2>
+                        <div className="profile__socials">
+                        <ul className="profile__socialsList">
+                            <li className="socialsItem"><a href="https://www.facebook.com/lasse-hindsberg" target="_blank"><AiOutlineFacebook/></a></li>
+                            <li className="socialsItem"><a href="https://github.com/LasseHindsberg" target="_blank"><AiOutlineGithub/></a></li>
+                            <li className="socialsItem"><a href="https://twitter.com/frostyy0w0" target="_blank"><AiOutlineTwitter/></a></li>
+                        </ul>
+                    </div>
+                    </section>
                     <section>
                         <h2>My projects</h2>
                         <p>I've made multiple web applications.</p>
@@ -88,8 +90,14 @@ export default function Profile() {
                 </div>
 
                 <div className="profile__aboutMeSection">
-                    <h4 className="profile__aboutMeHeader">Achievements:</h4>
-                    <p className="profile__aboutMeContent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ea ipsam neque pariatur omnis. Delectus totam assumenda aliquam nesciunt dicta explicabo ad nemo odio eaque suscipit reiciendis ratione praesentium nulla, odit eius et reprehenderit amet enim hic natus possimus a facere? Et optio, expedita neque odio nisi eius voluptates omnis!</p>
+                    <h4 className="profile__aboutMeHeader">Achievements &amp; Work Experience:</h4>
+                    <ul className="profile__aboutMeContent">
+                        <li>Brand Ambassador at HP</li>
+                        <li>Brand Ambassador at Dentsu X</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
                 <div className="profile__aboutMeSection">
                     <h4 className="profile__aboutMeHeader">Goals:</h4>
