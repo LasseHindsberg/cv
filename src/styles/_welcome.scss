@@ -43,6 +43,9 @@
     .welcome {
         width: 70vw;
         font-size: 18px;
+        &__link {
+            color: $vibrant3;
+        }
     }
 }
 
@@ -52,6 +55,8 @@
     .welcome {
         width: 80vw;
         font-size: 24px;
+
+        
     }
 
 
