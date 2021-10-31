@@ -25,9 +25,9 @@ export default function Profile() {
                         <h2>Socials</h2>
                         <div className="profile__socials">
                         <ul className="profile__socialsList">
-                            <li className="socialsItem"><a href="https://www.facebook.com/lasse-hindsberg" target="_blank"><AiOutlineFacebook/></a></li>
-                            <li className="socialsItem"><a href="https://github.com/LasseHindsberg" target="_blank"><AiOutlineGithub/></a></li>
-                            <li className="socialsItem"><a href="https://twitter.com/frostyy0w0" target="_blank"><AiOutlineTwitter/></a></li>
+                            <li className="socialsItem"><a href="https://www.facebook.com/lasse-hindsberg" target="_blank" rel="noreferrer"><AiOutlineFacebook/></a></li>
+                            <li className="socialsItem"><a href="https://github.com/LasseHindsberg" target="_blank" rel="noreferrer"><AiOutlineGithub/></a></li>
+                            <li className="socialsItem"><a href="https://twitter.com/frostyy0w0" target="_blank" rel="noreferrer"><AiOutlineTwitter/></a></li>
                         </ul>
                     </div>
                     </section>
