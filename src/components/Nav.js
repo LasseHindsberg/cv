@@ -15,12 +15,12 @@ export default function Nav() {
                     <li className="nav__item">
                         <Link to="/about">About</Link>
                     </li>
-                    <li className="nav__item">
+                    {/* <li className="nav__item">
                         <Link to="/projects">Projects</Link>
                     </li>
                     <li className="nav__item">
                         <Link to="/blog">Blog</Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
             <div className="mobile">
@@ -35,8 +35,8 @@ export default function Nav() {
             <nav className="navMobile">
                 <Link to="/home" className="nav-item">Home</Link>
                 <Link to="/about" className="nav-item" >About</Link>
-                <Link to="/projects" className="nav-item" >Projects</Link>
-                <Link to="/blog" className="nav-item" >Blog</Link>
+                {/* <Link to="/projects" className="nav-item" >Projects</Link>
+                <Link to="/blog" className="nav-item" >Blog</Link> */}
             </nav>
             </div>
         </>
