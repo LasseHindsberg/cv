@@ -4,7 +4,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto auto;
     grid-template-areas: 
     'avatar .  readMore'
     '. . skills';
@@ -14,8 +14,11 @@
         padding: 25px;
     }
     &__img {
-        max-width: 300px;
-        max-height: 500px;
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+
     }
     &__alsoRead{
         grid-area: readMore;
@@ -27,9 +30,28 @@
     &__skills {
         grid-area: skills;
     }
-    &__socials {
+    &__skill {
         display: flex;
-        
+        width: 250px;
+        justify-content: flex-end;
+        margin: 25px;
+    }
+    &__socialsList {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .socialsItem {
+        margin: 10px;
+        a {
+            color: $vibrant3;
+        }
+    }
+    .socialsItem:hover {
+        a {
+            color: $vibrant1;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms color
+        }
     }
 }
 
@@ -46,11 +68,7 @@
         &__imageContainer{
             padding: 0px;
         }
-        &__img {
-            border-radius: 100%;
-        }
-    }
-    
+}
 }
 
 
