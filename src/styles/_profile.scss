@@ -37,9 +37,12 @@
         margin: 25px;
     }
     &__socialsList {
+        padding: 0;
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        justify-items: center;
+        align-content: center;
     }
     .socialsItem {
         margin: 10px;
@@ -67,6 +70,9 @@
 
         &__imageContainer{
             padding: 0px;
+        }
+        &__skills {
+            text-align: center;
         }
 }
 }

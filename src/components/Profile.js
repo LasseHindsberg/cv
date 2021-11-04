@@ -5,6 +5,7 @@ import {
   AiOutlineFacebook,
   AiOutlineGithub,
   AiOutlineLinkedin,
+  AiOutlineMail,
 } from "react-icons/ai";
 
 export default function Profile() {
@@ -56,6 +57,11 @@ export default function Profile() {
                     <AiOutlineLinkedin />
                     <p>LinkedIn</p>
                   </a>
+                </li>
+                <li className="socialsItem">
+              <a href="mailto:lassehindsberg@gmail.com"><AiOutlineMail/>
+              <p>Contact</p>
+              </a>
                 </li>
               </ul>
             </div>
@@ -115,10 +121,11 @@ export default function Profile() {
             I’m curious, imaginative and always helpful. In 2021 I learnt myself the basics of Next.JS, and I’m always ready to learn new tricks.
             In my day-to-day life, I’m good at having to multitask, and prioritizing my assignments after importance. I’m good at finding solutions to the issues I come across.
           </p>
-          <p>
-            In my free time I prioritize cooperation. I enjoy strategic board games and spending time playing video games that requires a bit more thinking than the average game
-          </p>
         </div>
+        <footer>
+          <br/>
+          <br/>
+        </footer>
       </div>
     </>
   );
